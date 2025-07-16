@@ -14,8 +14,8 @@ Ky projekt simulojnë rënien e shiut dhe borës duke përdorur një ndërfaqe g
 3. Sigurohu që `graphics.h` është instaluar dhe IDE është konfiguruar siç duhet.
 4. Ndërto dhe ekzekuto projektin.
 
-**Video udhëzuese për instalimin e graphics.h** (jo e imja):  
-[https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)
+**[Video udhëzuese](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh) për instalimin e graphics.h** (jo e imja):  
+
 
 ---
 
@@ -35,5 +35,5 @@ This project simulates rainfall and snowfall using a graphical interface written
 3. Ensure `graphics.h` is correctly installed and configured in your IDE.
 4. Build and run the project.
 
-**Graphics.h installation guide** (not mine):  
-[https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)
+**Graphics.h [installation guide](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)** (not mine):  
+
