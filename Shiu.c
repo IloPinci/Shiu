@@ -3,7 +3,6 @@
 #include <graphics.h> 
 #include <time.h> 
 
- 
 
 #define NumriMaksimalShiu 200 
 #define NumriMaksimalFlokeve 200 
