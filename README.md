@@ -5,7 +5,7 @@
 Ky projekt simulojnë rënien e shiut dhe borës duke përdorur një ndërfaqe grafike në gjuhën programuese C. Vizualizimi realizohet përmes bibliotekës `graphics.h`, e cila përdoret brenda IDE-së Dev-C++.
 
 ### Kërkesat
-- IDE: [Dev-C++]([https://www.bloodshed.net/]) (përdorni një version që mbështet `graphics.h`)
+- IDE: [Dev-C++](https://www.bloodshed.net/) (përdorni një version që mbështet `graphics.h`)
 - Biblioteka grafike: `graphics.h` e instaluar dhe konfiguruar siç duhet
 
 ### Përdorimi
@@ -26,7 +26,7 @@ Ky projekt simulojnë rënien e shiut dhe borës duke përdorur një ndërfaqe g
 This project simulates rainfall and snowfall using a graphical interface written in the C programming language. The visualization is done using the `graphics.h` library in the Dev-C++ IDE.
 
 ### Requirements
-- IDE: [Dev-C++]([https://www.bloodshed.net/]) (make sure it supports `graphics.h`)
+- IDE: [Dev-C++](https://www.bloodshed.net/) (make sure it supports `graphics.h`)
 - Graphical library: Properly installed and configured `graphics.h`
 
 ### How to Use
