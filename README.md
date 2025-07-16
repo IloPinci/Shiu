@@ -1,17 +1,39 @@
-# Shiu
+# 🌧️ Simulimi i Shiut në C
 
-**Shqip:**
+## 📌 Përshkrim (Shqip)
 
-Ky projekt sherben per te simuluar renien e shiut me nderfaqe grafike, ne gjuhen C.
-Per ta perdorur duhet qe te keni instaluar librarine e nderfaqes grafike <graphics.h> ne IDE DevC++. Kujdes versionin e IDE-s!
+Ky projekt simulojnë rënien e shiut dhe borës duke përdorur një ndërfaqe grafike në gjuhën programuese C. Vizualizimi realizohet përmes bibliotekës `graphics.h`, e cila përdoret brenda IDE-së Dev-C++.
 
-Nje guide: (https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh) [_Jo e imja_]
+### ⚙️ Kërkesat
+- IDE: [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/) (përdorni një version që mbështet `graphics.h`)
+- Biblioteka grafike: `graphics.h` e instaluar dhe konfiguruar siç duhet
 
+### ▶️ Si ta përdorësh
+1. Shkarko projektin.
+2. Hap skedarin `.c` me Dev-C++.
+3. Sigurohu që `graphics.h` është instaluar dhe IDE është konfiguruar siç duhet.
+4. Ndërto dhe ekzekuto projektin.
 
+🔗 **Video udhëzuese për instalimin e graphics.h** (jo e imja):  
+[https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)
 
-**English:**
+---
 
-This project is used to simulate rainfall with a graphical interface, in C language. 
-To use it you need to have the graphical interface library <graphics.h> on thee DevC++ IDE. Careful with the version of this IDE.
+## 🌧️ Rain Simulation in C
 
-Guide: (https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh) [_Not mine]_
+### 📌 Description (English)
+
+This project simulates rainfall and snowfall using a graphical interface written in the C programming language. The visualization is done using the `graphics.h` library in the Dev-C++ IDE.
+
+### ⚙️ Requirements
+- IDE: [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/) (make sure it supports `graphics.h`)
+- Graphical library: Properly installed and configured `graphics.h`
+
+### ▶️ How to Use
+1. Download the project.
+2. Open the `.c` file with Dev-C++.
+3. Ensure `graphics.h` is correctly installed and configured in your IDE.
+4. Build and run the project.
+
+🔗 **Graphics.h installation guide** (not mine):  
+[https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)
