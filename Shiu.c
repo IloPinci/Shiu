@@ -16,7 +16,7 @@ int main() {
     gd = DETECT; 
     initgraph(&gd, &gm, ""); 
 
-
+ 
     //fullscreen 
     initwindow(getmaxwidth(), getmaxheight(), "", -3, -3); 
 
@@ -33,15 +33,12 @@ int main() {
 
     // vektore ku ruhen pozicionet e pikave te shiut 
     int PozicioniXshi[NumriMaksimalShiu]; 
-    int PozicioniYshi[NumriMaksimalShiu]; 
-
- 
+    int PozicioniYshi[NumriMaksimalShiu];  
 
     // vektore ku ruhen pozicionet e flokeve te bores 
     int PozicioniXbore[NumriMaksimalFlokeve]; 
     int PozicioniYbore[NumriMaksimalFlokeve]; 
 
- 
 
     // gjenerimi fillestar random per shiun 
     for (int i = 0; i < NumriMaksimalShiu; i++) { 
