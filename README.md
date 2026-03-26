@@ -1,39 +1,89 @@
-# Simulimi i Shiut në C
+# Rain & Snow Simulation - C / graphics.h
 
-## Përshkrim (Shqip)
+> A real-time weather simulation built in C during my first year of university. Demonstrates low-level graphics programming, animation loops, keyboard-driven interactivity, and basic physics modelling - all without a game engine or framework. Variable and function names are written in Albanian (`Shiu` = rain, `Bore` = snow, `Era` = wind, `Vetetime` = lightning).
+---
 
-Ky projekt simulojnë rënien e shiut dhe borës duke përdorur një ndërfaqe grafike në gjuhën programuese C. Vizualizimi realizohet përmes bibliotekës `graphics.h`, e cila përdoret brenda IDE-së Dev-C++.
+## Overview
 
-### Kërkesat
-- IDE: [Dev-C++](https://www.bloodshed.net/) (përdorni një version që mbështet `graphics.h`)
-- Biblioteka grafike: `graphics.h` e instaluar dhe konfiguruar siç duhet
+This project renders an animated rainfall and snowfall simulation directly on the screen using the `graphics.h` library in C. Weather conditions such as wind direction, wind speed, temperature, and lightning; are all controllable at runtime via keyboard input, with simulation statistics persisted to a text file on exit.
 
-### Përdorimi
-1. Shkarko projektin.
-2. Hap skedarin `.c` me Dev-C++.
-3. Sigurohu që `graphics.h` është instaluar dhe IDE është konfiguruar siç duhet.
-4. Ndërto dhe ekzekuto projektin.
-
-**[Video udhëzuese](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh) për instalimin e graphics.h** (jo e imja):  
-
+The goal was to explore **real-time graphics programming from first principles**: manual frame clearing, coordinate arithmetic, animation timing, and event-driven control flow - well below the abstraction layer of modern game engines or UI toolkits.
 
 ---
 
-## Rain Simulation in C
+## Features
 
-### Description (English)
+| Feature | Details |
+|---|---|
+| **Rain simulation** | Up to 200 raindrops rendered as angled line segments |
+| **Snow simulation** | Activates when temperature <= 0°C; renders snowflakes as filled circles |
+| **Wind system** | Adjustable direction (left / right / calm) and speed; affects both rain and snow drift |
+| **Lightning** | Toggleable bolt rendered as a randomised multi-segment polyline |
+| **Temperature control** | Switch between rain and snow in real time by raising/lowering temperature |
+| **Statistics export** | On exit, writes total raindrop and snowflake counts to `Shiu.txt` |
+| **Fullscreen window** | Detects screen dimensions at runtime and fills the display |
 
-This project simulates rainfall and snowfall using a graphical interface written in the C programming language. The visualization is done using the `graphics.h` library in the Dev-C++ IDE.
+---
 
-### Requirements
-- IDE: [Dev-C++](https://www.bloodshed.net/) (make sure it supports `graphics.h`)
-- Graphical library: Properly installed and configured `graphics.h`
+## Controls
 
-### How to Use
-1. Download the project.
-2. Open the `.c` file with Dev-C++.
-3. Ensure `graphics.h` is correctly installed and configured in your IDE.
-4. Build and run the project.
+| Key | Action |
+|---|---|
+| `C` | Wind blows left (strong) |
+| `X` | Wind blows right (strong) |
+| `B` | Calm - no wind |
+| `V` | Maximum wind speed |
+| `N` | Decrease temperature (towards snow) |
+| `M` | Increase temperature (towards rain) |
+| `Z` | Toggle lightning |
+| `Space` | Save statistics and quit |
 
-**Graphics.h [installation guide](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh)** (not mine):  
+---
+
+## Technical Highlights
+
+- **Animation loop** - continuous `cleardevice()` / redraw cycle at ~20 FPS via `delay(50)`
+- **Particle system** - position arrays for up to 200 independent rain and snow particles, with wrap-around boundary handling
+- **Physics model** - wind speed scales both horizontal drift and vertical fall rate; snow and rain respond differently
+- **Lightning rendering** - procedurally generated bolt using randomised segment offsets from a top origin point
+- **File I/O** - session statistics written to disk on exit using standard `stdio.h`
+
+---
+
+## Requirements
+
+| Requirement | Details |
+|---|---|
+| **Language** | C (C99 or later) |
+| **IDE** | [Dev-C++](https://www.bloodshed.net/) with `graphics.h` support |
+| **Library** | `graphics.h` (WinBGIm) - must be installed and configured |
+
+> **Installation guide for `graphics.h`:** [YouTube tutorial](https://youtu.be/CHFyEnlMnxg?si=Up2FRqtVtF7QFjdh) *(third-party)*
+
+---
+
+## Getting Started
+
+```bash
+# 1. Clone or download the repository
+git clone https://github.com/your-username/rain-simulation-c.git
+
+# 2. Open Shiu.c in Dev-C++
+
+# 3. Ensure graphics.h is installed (see link above)
+
+# 4. Build and run (F11 in Dev-C++)
+```
+
+---
+
+## Context
+
+This was built during **Year 1 of my BSc** as an early exploration of graphics programming and animation in C. The project intentionally avoids high-level libraries to stay close to how drawing and animation work at a lower level - managing pixel coordinates, timing, and input polling manually.
+
+It taught me:
+- How animation loops work before game engines abstract them away
+- How to model simple physics (gravity, wind) with integer arithmetic
+- The value of separating simulation state from rendering logic
+- How to handle keyboard input in a polling-based (non-event-driven) environment
 
