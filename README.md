@@ -3,6 +3,12 @@
 > A real-time weather simulation built in C during my first year of university. Demonstrates low-level graphics programming, animation loops, keyboard-driven interactivity, and basic physics modelling - all without a game engine or framework. Variable and function names are written in Albanian (`Shiu` = rain, `Bore` = snow, `Era` = wind, `Vetetime` = lightning).
 ---
 
+
+
+https://github.com/user-attachments/assets/44974f6e-60a2-4325-a0f6-ce8ac33537ce
+
+
+
 ## Overview
 
 This project renders an animated rainfall and snowfall simulation directly on the screen using the `graphics.h` library in C. Weather conditions such as wind direction, wind speed, temperature, and lightning; are all controllable at runtime via keyboard input, with simulation statistics persisted to a text file on exit.
